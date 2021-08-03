@@ -1,0 +1,56 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+
+  &--center {
+    align-items: center;
+  }
+
+  &__caption {
+    position: relative;
+
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__caption.line-left:before,
+  &__caption.line-right:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+
+    height: 1px;
+    width: 15px;
+    transform: translateY(-50%);
+
+    background-color: $primary-red-color;
+  }
+
+  &__caption.line-left:before {
+    left: -20px;
+  }
+
+  &__caption.line-right:after {
+    right: -20px;
+  }
+
+  &__heading {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+
+  &__heading--small {
+    font-size: 2.6rem;
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    line-height: 1.7;
+
+    color: $primary-grey-color;
+  }
+}

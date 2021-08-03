@@ -1,0 +1,96 @@
+.case {
+  position: relative;
+
+  padding: 0 100px;
+  margin-bottom: 170px;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 40px 0;
+    margin-top: 30px;
+    border-radius: 30px 30px 30px 12px;
+
+    color: $primary-white-color;
+  }
+
+  &__item:nth-child(1) {
+    background-color: $primary-red-color;
+  }
+
+  &__item:nth-child(2) {
+    background-color: $primary-yellow-color;
+  }
+
+  &__item:nth-child(3) {
+    background-color: $primary-blue-color;
+  }
+
+  &__item:nth-child(4) {
+    background-color: $primary-pink-color;
+  }
+
+  &__qnt {
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+
+  &__desc {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__item img {
+    position: absolute;
+
+    width: 40px;
+  }
+
+  &__item:nth-of-type(1) img {
+    top: 10px;
+    left: 10px;
+
+    @include animate-rotate-poppin(0.2s);
+  }
+
+  &__item:nth-of-type(2) img {
+    top: 8px;
+    right: 20px;
+
+    @include animate-rotate-poppin(0.1s);
+  }
+
+  &__item:nth-of-type(3) img {
+    bottom: 15px;
+    left: 25px;
+
+    @include animate-rotate-poppin(0.4s);
+  }
+
+  &__item:nth-of-type(4) img {
+    top: 30px;
+    right: 10px;
+
+    @include animate-rotate-poppin(0.3s);
+  }
+
+  &__background {
+    position: absolute;
+    right: -150px;
+    top: 10%;
+    z-index: -1;
+
+    width: 500px;
+  }
+}

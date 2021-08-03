@@ -1,0 +1,16 @@
+.about {
+  margin-bottom: 100px;
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+    padding-left: 50px;
+  }
+
+  &__right .primary-btn {
+    align-self: flex-start;
+  }
+}

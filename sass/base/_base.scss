@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+
+  color: $primary-text-color;
+}
+
+body {
+  overflow-x: hidden;
+
+  background-color: $primary-background-color;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: 0;
+
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+  color: $primary-text-color;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  color: $primary-red-color;
+}

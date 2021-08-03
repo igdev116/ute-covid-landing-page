@@ -1,0 +1,24 @@
+@keyframes infinite-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes infinite-rotate-opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes infinite-poppin {
+  to {
+    transform: translateY(20px);
+  }
+}

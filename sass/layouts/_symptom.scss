@@ -1,0 +1,71 @@
+.symptom {
+  margin-bottom: 100px;
+
+  & .row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 30px;
+    margin-top: 50px;
+    padding-right: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__item img {
+    width: 60px;
+
+    transition: transform 0.25s ease-out;
+  }
+
+  @media (hover: hover) {
+    &__item:hover img {
+      transform: scale(1.2) translateY(-5px);
+    }
+  }
+
+  &__label {
+    z-index: -1;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    border-top-right-radius: 20px;
+    margin-left: -15px;
+    flex: 1;
+
+    user-select: none;
+  }
+
+  &__right {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+  }
+
+  &__thumb {
+    width: 460px;
+  }
+
+  &__virus {
+    position: absolute;
+
+    top: 10px;
+    left: 17.5%;
+    width: 500px;
+
+    animation: infinite-poppin 2s ease-in-out infinite alternate;
+  }
+}

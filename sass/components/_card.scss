@@ -1,0 +1,73 @@
+.card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  overflow: hidden;
+
+  transition: all 0.12s ease-in-out;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-red-color;
+  }
+
+  &__icon {
+    font-size: 4.2rem;
+
+    color: $primary-red-color;
+  }
+
+  &__icon {
+    width: 50px;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    margin: 20px 0 15px;
+  }
+
+  &__desc {
+    position: relative;
+    z-index: 1;
+
+    font-size: 1.4rem;
+    line-height: 2.2;
+
+    color: $primary-grey-color;
+  }
+
+  * {
+    transition: all 0.25s ease;
+  }
+
+  &:hover * {
+    color: $primary-white-color;
+  }
+
+  &__virus {
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+
+    font-size: 10.8rem;
+    opacity: 0;
+    transform: scale(1) translateY(0) rotate(0);
+
+    transition: all 0.3s;
+  }
+
+  &:hover &__virus {
+    transform: scale(1.1) translateY(-50px) rotate(90deg);
+    opacity: 1;
+
+    color: #c02323ad;
+
+    transition-duration: 0.55s;
+  }
+}

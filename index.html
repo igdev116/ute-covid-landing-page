@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTE Covid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+          <img src="/svgs/logo.svg" alt="Logo" />
+        </a>
+        <nav class="header__nav">
+          <a href="#" class="header__nav-item text-hover"
+            ><i class="bx bx-home"></i><span>Home</span>
+          </a>
+          <a href="#" class="header__nav-item text-hover"
+            ><i class="bx bx-notepad"></i><span>About</span>
+          </a>
+          <a href="#" class="header__nav-item text-hover"
+            ><i class="bx bxs-virus"></i><span>Prevention</span>
+          </a>
+          <a href="#" class="header__nav-item text-hover"
+            ><i class="bx bxs-contact"></i><span>Contact us</span></a
+          >
+        </nav>
+        <button class="primary-btn primary-btn--red">
+          <span>Emergency</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- banner -->
+    <section class="banner container">
+      <div class="row">
+        <div class="col-5">
+          <div class="banner__left">
+            <h1 class="banner__title">
+              Let's help <br />
+              recover the earth, <br />
+              <strong>starts from us!</strong>
+            </h1>
+            <p class="banner__desc">
+              The outbreak of the coronavirus issue or called Covid-19 makes the
+              Earh grieve
+            </p>
+            <div class="banner__btns">
+              <button class="primary-btn primary-btn--red">Learn more</button>
+              <button class="primary-btn primary-btn--yellow">
+                Watch video
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-7">
+          <div class="banner__right">
+            <div class="banner__img">
+              <img src="/images/banner.png" alt="Banner" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner__virus banner__virus--red"></div>
+      <div class="banner__virus banner__virus--blue"></div>
+    </section>
+
+    <!-- about -->
+    <section class="about container">
+      <div class="row">
+        <div class="col-5">
+          <div class="about__left">
+            <img src="/images/about.png" alt="About" />
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="about__right">
+            <div class="block">
+              <span class="block__caption line-left">Stay safe</span>
+              <h2 class="block__heading">You should know about covid-19</h2>
+              <p class="block__desc">
+                Coronavirus disease (COVID-19) is an infectious disease caused
+                by a newly discovered coronavirus. Most people infected with the
+                COVID-19 virus will experience mild to moderate respiratory
+                illness and recover without requiring special treatment
+              </p>
+            </div>
+            <div class="primary-btn primary-btn--red">Read more</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- case -->
+    <section class="case container">
+      <div class="block block--center">
+        <span class="block__caption line-left line-right">Total cases</span>
+        <h2 class="block__heading">Covid-19 outbreak</h2>
+        <p class="block__desc"></p>
+      </div>
+
+      <div class="case__items">
+        <div class="case__item">
+          <span class="case__qnt">187</span>
+          <p class="case__desc">Total country</p>
+          <img src="/svgs/case-icon.svg" alt="Virus" />
+        </div>
+        <div class="case__item">
+          <span class="case__qnt">1,051,429</span>
+          <p class="case__desc">Confirmed cases</p>
+          <img src="/svgs/case-icon.svg" alt="Virus" />
+        </div>
+        <div class="case__item">
+          <span class="case__qnt">412,311</span>
+          <p class="case__desc">Deaths</p>
+          <img src="/svgs/case-icon.svg" alt="Virus" />
+        </div>
+        <div class="case__item">
+          <span class="case__qnt">520,133</span>
+          <p class="case__desc">Recovered</p>
+          <img src="/svgs/case-icon.svg" alt="Virus" />
+        </div>
+      </div>
+
+      <img src="/images/case-background.png" class="case__background" />
+    </section>
+
+    <!-- sympton -->
+    <section class="symptom container">
+      <div class="row">
+        <div class="col-5">
+          <div class="symptom__left">
+            <div class="block">
+              <span class="block__caption line-left">Symptoms</span>
+              <h2 class="block__heading">Covid-19 Symptoms</h2>
+              <p class="block__desc">
+                COVID-19 affects different people in different ways. Most
+                infected people will develop mild to moderate illness and
+                recover without hospitalization.
+              </p>
+            </div>
+
+            <div class="symptom__items">
+              <div class="symptom__item">
+                <img src="/svgs/symptom-1.svg" alt="Symptom" />
+                <span class="symptom__label">Dry cough</span>
+              </div>
+              <div class="symptom__item">
+                <img src="/svgs/symptom-2.svg" alt="Symptom" />
+                <span class="symptom__label">Strong headache</span>
+              </div>
+              <div class="symptom__item">
+                <img src="/svgs/symptom-3.svg" alt="Symptom" />
+                <span class="symptom__label">Hot fever</span>
+              </div>
+              <div class="symptom__item">
+                <img src="/svgs/symptom-4.svg" alt="Symptom" />
+                <span class="symptom__label">Tiredness</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="symptom__right">
+            <img
+              class="symptom__thumb"
+              src="/images/symptom.png"
+              alt="Symptom"
+            />
+            <img
+              src="/images/symptom-virus.png"
+              alt="Virus"
+              class="symptom__virus"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cards -->
+    <section class="cards container">
+      <div class="block block--center">
+        <span class="block__caption line-left line-right">Protection</span>
+        <h2 class="block__heading">Protect yourself from covid-19</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-4 p-4">
+          <div class="card">
+            <i class="card__icon bx bx-donate-blood"></i>
+            <h3 class="card__title">Clean your hands for 20 secs</h3>
+            <p class="card__desc">
+              Washing hands can keep you healthy and prevent the spread of
+              respiratory and diarrheal infections from one person to the next
+            </p>
+            <i class="card__virus bx bxs-virus"></i>
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="card">
+            <i class="card__icon bx bx-conversation"></i>
+            <h3 class="card__title">Avoid Contacts</h3>
+            <p class="card__desc">
+              Avoid crowds and poorly ventilated spaces. Being in crowds like in
+              restaurants, bars, fitness centers, or movie theaters puts you at
+              higher risk for COVID-19
+            </p>
+            <i class="card__virus bx bxs-virus"></i>
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="card">
+            <i class="card__icon bx bx-building-house"></i>
+            <h3 class="card__title">Stay at Your Home</h3>
+            <p class="card__desc">
+              Stay at home, protect yourself and loved ones from coronavirus
+              (COVID-19)
+            </p>
+            <i class="card__virus bx bxs-virus"></i>
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="card">
+            <i class="card__icon bx bxs-face-mask"></i>
+            <h3 class="card__title">Wear Face Mask</h3>
+            <p class="card__desc">
+              Masks are a simple barrier to help prevent your respiratory
+              droplets from reaching others. Studies show that masks reduce the
+              spray of droplets when worn over the nose and mouth
+            </p>
+            <i class="card__virus bx bxs-virus"></i>
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="card">
+            <i class="card__icon bx bx-plus-medical"></i>
+            <h3 class="card__title">Get Vaccinated</h3>
+            <p class="card__desc">
+              Authorized COVID-19 vaccines can help protect you from COVID-19.
+              You should get a COVID-19 vaccine when it is available to you.
+            </p>
+            <i class="card__virus bx bxs-virus"></i>
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="card">
+            <i class="card__icon bx bx-meteor"></i>
+            <h3 class="card__title">Cover coughs and sneezes</h3>
+            <p class="card__desc">
+              If you are wearing a mask: You can cough or sneeze into your mask.
+              Put on a new, clean mask as soon as possible and wash your hands
+            </p>
+            <i class="card__virus bx bxs-virus"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- doctors -->
+    <section class="doctors container">
+      <div class="block block--center">
+        <span class="block__caption line-left line-right">Experts</span>
+        <h2 class="block__heading">Meet our specialists</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-4 p-4">
+          <div class="doctor">
+            <img class="doctor__img" src="/svgs/doctor-1.svg" alt="Doctor" />
+            <div class="doctor__desc">
+              <h3 class="doctor__name">Dr. KIMBERLY PEREZ</h3>
+              <span class="doctor__role">Nephrologists</span>
+              <div class="doctor__contacts">
+                <a class="doctor__contact" href="#"
+                  ><i class="bx bxl-instagram-alt"></i
+                ></a>
+                <a class="doctor__contact" href="#"
+                  ><i class="bx bxl-facebook-square"></i
+                ></a>
+                <a class="doctor__contact" href="#"
+                  ><i class="bx bxl-google"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="doctor">
+            <img class="doctor__img" src="/svgs/doctor-2.svg" alt="Doctor" />
+            <div class="doctor__desc">
+              <h3 class="doctor__name">Dr. ALBERT DUNCAN</h3>
+              <span class="doctor__role">Throat Specialist</span>
+              <div class="doctor__contacts">
+                <a class="doctor__contact" href="#"
+                  ><i class="bx bxl-instagram-alt"></i
+                ></a>
+                <a class="doctor__contact" href="#"
+                  ><i class="bx bxl-facebook-square"></i
+                ></a>
+                <a class="doctor__contact" href="#"
+                  ><i class="bx bxl-google"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="doctor">
+            <img class="doctor__img" src="/svgs/doctor-3.svg" alt="Doctor" />
+            <div class="doctor__desc">
+              <h3 class="doctor__name">Dr. JOSIE BUCHANAN</h3>
+              <span class="doctor__role">Surgion Specialist</span>
+              <div class="doctor__contacts">
+                <a class="doctor__contact" href="#"
+                  ><i class="bx bxl-instagram-alt"></i
+                ></a>
+                <a class="doctor__contact" href="#"
+                  ><i class="bx bxl-facebook-square"></i
+                ></a>
+                <a class="doctor__contact" href="#"
+                  ><i class="bx bxl-google"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- step -->
+    <section class="steps container">
+      <div class="block block--center">
+        <span class="block__caption line-left line-right">Remind</span>
+        <h2 class="block__heading">Two important things</h2>
+      </div>
+
+      <div class="row step">
+        <div class="col-6">
+          <div class="step__left">
+            <div class="block">
+              <div class="badge badge--red">First thing</div>
+              <h2 class="block__heading block__heading--small">
+                Avoid close contact with people who are unwell
+              </h2>
+              <p class="block__desc">
+                You can choose how you will receive and consume information
+                about the outbreak. Another way to care for yourself
+              </p>
+            </div>
+            <div class="primary-btn primary-btn--red">Detail</div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="step__right">
+            <img src="/images/step-1.png" alt="Step" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row step">
+        <div class="col-6">
+          <div class="step__left">
+            <img src="/images/step-2.png" alt="Step" />
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="step__right">
+            <div class="block">
+              <div class="badge badge--yellow">Second thing</div>
+              <h2 class="block__heading block__heading--small">
+                Stay 6 feet away from others
+              </h2>
+              <p class="block__desc">
+                Inside your home: Avoid close contact with people who are sick.
+                If possible, maintain 6 feet between the person who is sick and
+                other household members
+              </p>
+            </div>
+            <div class="primary-btn primary-btn--red">See more</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- news -->
+    <section class="news container">
+      <div class="block block--center">
+        <span class="block__caption line-left line-right">News</span>
+        <h2 class="block__heading">Recent news of covid-19</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-4 p-4">
+          <div class="new">
+            <img src="/images/news-1.jpg" alt="News" />
+            <a href="#" class="new__content">
+              <span class="new__label">Quarantine</span>
+              <h3 class="new__title">
+                Book released to help children cope with COVID-19
+              </h3>
+              <button class="primary-btn primary-btn--red primary-btn--small">
+                Read more
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="new">
+            <img src="/images/news-2.jpg" alt="News" />
+            <a href="#" class="new__content">
+              <span class="new__label">Treatment</span>
+              <h3 class="new__title">
+                COVID-19 is affecting 210 countries around
+              </h3>
+              <button class="primary-btn primary-btn--red primary-btn--small">
+                Read more
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <div class="new">
+            <img src="/images/news-3.jpg" alt="News" />
+            <a href="#" class="new__content">
+              <span class="new__label">Covid-19</span>
+              <h3 class="new__title">
+                People worldwide adjust to new life amid COVID-19
+              </h3>
+              <button class="primary-btn primary-btn--red primary-btn--small">
+                Read more
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ending -->
+    <section class="ending">
+      <div class="block block--center">
+        <span class="block__caption line-left line-right">End</span>
+        <h2 class="block__heading">Say thank you to our real heros</h2>
+        <p class="block__desc">
+          Healthcare Worker Exposure Response & Outcomes, or HERO, calls on all
+          nurses, doctors. pharmacists, EMS personnel and other employees in
+          health care settings to sign up for the registry and share their
+          stories
+        </p>
+      </div>
+      <div class="ending__img">
+        <img src="/svgs/end.svg" alt="End" />
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="footer__logo">
+          <img src="/svgs/logo.svg" alt="Logo" />
+        </div>
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Overview</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Symptoms</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Prevention</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Treatment</a>
+          </li>
+        </ul>
+        <ul class="footer__contacts">
+          <a href="https://www.facebook.com/hung1162/" class="footer__contact"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/watch?v=QWrq6c8s07w&t=22s"
+            class="footer__contact"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+          <a href="#" class="footer__contact"><i class="bx bxl-twitter"></i></a>
+          <a href="https://github.com/minhhunghuynh1106" class="footer__contact"
+            ><i class="bx bxl-github bx-tada"></i
+          ></a>
+        </ul>
+      </div>
+      <span class="footer__copyright">Copyright © 2021 - 19DT1</span>
+    </footer>
+  </body>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/index.js"></script>
+</html>

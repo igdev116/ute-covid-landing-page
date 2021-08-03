@@ -1,0 +1,77 @@
+.footer {
+  padding: 30px 0;
+  background-color: $footer-background-color;
+
+  &__logo {
+    width: 130px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    font-size: 1.4rem;
+    padding: 0 5px;
+  }
+
+  &__item > a {
+    color: $primary-white-color;
+
+    transition: all 0.25s ease;
+  }
+
+  &__item:hover > a {
+    color: $primary-red-color;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__contact {
+    font-size: 2rem;
+    padding: 0 5px;
+
+    color: $primary-white-color;
+
+    transition: all 0.25s ease;
+  }
+
+  &__contact:hover {
+    color: $primary-red-color;
+  }
+
+  &__copyright {
+    position: relative;
+
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 30px;
+    color: $primary-white-color;
+  }
+
+  &__copyright:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+
+    display: block;
+    width: 80%;
+    margin-left: -40%;
+    height: 1px;
+
+    background: radial-gradient(
+      ellipse at center,
+      rgba(222, 228, 239, 0.2) 0,
+      rgba(255, 255, 255, 0) 75%
+    );
+  }
+}

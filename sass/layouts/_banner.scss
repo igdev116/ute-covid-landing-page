@@ -1,0 +1,72 @@
+.banner {
+  position: relative;
+
+  margin-top: 80px;
+  margin-bottom: 100px;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+  }
+
+  &__title {
+    font-size: 5.2rem;
+
+    text-transform: capitalize;
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    line-height: 1.7;
+
+    color: $primary-grey-color;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__virus {
+    position: absolute;
+
+    z-index: -1;
+
+    background-repeat: no-repeat;
+
+    animation: infinite-rotate 30s linear infinite;
+  }
+
+  &__virus--red {
+    left: 40%;
+    top: 10px;
+
+    width: 135px;
+    height: 130px;
+
+    background-image: url(../images/virus-red.png);
+  }
+
+  &__virus--blue {
+    bottom: 10px;
+    right: 20px;
+
+    width: 175px;
+    height: 170px;
+
+    background-image: url(../images/virus-blue.png);
+
+    animation-delay: 0.3s;
+    animation-duration: 35s;
+  }
+}

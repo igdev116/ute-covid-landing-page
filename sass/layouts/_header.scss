@@ -1,0 +1,36 @@
+.header {
+  padding: 12px 0;
+
+  background-color: $header-background-color;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 120px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__nav-item {
+    padding: 0 10px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: capitalize;
+
+    color: $primary-white-color;
+  }
+
+  &__nav-item .bx {
+    font-size: 1.6rem;
+  }
+}

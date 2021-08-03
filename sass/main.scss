@@ -1,0 +1,31 @@
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/animations";
+@import "./abstracts/mixins";
+
+// base
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+// components
+@import "./components/block";
+@import "./components/buttons";
+@import "./components/card";
+@import "./components/doctor";
+@import "./components/new";
+@import "./components/step";
+@import "./components/badge";
+
+// layouts
+@import "./layouts/header";
+@import "./layouts/banner";
+@import "./layouts/about";
+@import "./layouts/case";
+@import "./layouts/symptom";
+@import "./layouts/cards";
+@import "./layouts/doctors";
+@import "./layouts/news";
+@import "./layouts/ending";
+@import "./layouts/footer";
+@import "./layouts/steps";
