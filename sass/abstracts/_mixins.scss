@@ -1,3 +1,22 @@
 @mixin animate-rotate-poppin($delay: 0) {
   animation: infinite-rotate-opacity 3s linear $delay infinite;
 }
+
+// breakpoints
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == mobile {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+}

@@ -1,6 +1,15 @@
 .cards {
   margin-bottom: 80px;
-  padding: 0 120px;
+  padding: 0 80px;
+
+  @include respond(mobile) {
+    padding: 0 50px;
+    margin-bottom: 110px;
+  }
+
+  @include respond(phone) {
+    padding: 0 35px;
+  }
 
   & > .block {
     margin-bottom: 50px;

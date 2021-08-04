@@ -1,6 +1,15 @@
 .news {
   margin-bottom: 160px;
-  padding: 0 140px;
+  padding: 0 80px;
+
+  @include respond(tablet) {
+    padding: 0;
+    margin-bottom: 110px;
+  }
+
+  @include respond(phone) {
+    padding: 0 50px;
+  }
 
   .block {
     margin-bottom: 45px;

@@ -4,6 +4,14 @@
   margin-top: 80px;
   margin-bottom: 100px;
 
+  @include respond(tablet) {
+    margin-bottom: 150px;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 130px;
+  }
+
   &__left {
     display: flex;
     flex-direction: column;
@@ -16,6 +24,11 @@
     font-size: 5.2rem;
 
     text-transform: capitalize;
+
+    @include respond(mobile) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
   }
 
   &__desc {
@@ -23,18 +36,39 @@
     line-height: 1.7;
 
     color: $primary-grey-color;
+
+    @include respond(mobile) {
+      text-align: center;
+    }
   }
 
   &__btns {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @include respond(mobile) {
+      justify-content: center;
+    }
   }
 
   &__img {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(tablet) {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    @include respond(phone) {
+      width: 250px;
+    }
+  }
+
+  &__img img {
+    object-fit: contain;
   }
 
   &__virus {
@@ -55,11 +89,15 @@
     height: 130px;
 
     background-image: url(../images/virus-red.png);
+
+    @include respond(mobile) {
+      display: none;
+    }
   }
 
   &__virus--blue {
-    bottom: 10px;
-    right: 20px;
+    bottom: -30px;
+    right: -60px;
 
     width: 175px;
     height: 170px;
@@ -68,5 +106,9 @@
 
     animation-delay: 0.3s;
     animation-duration: 35s;
+
+    @include respond(mobile) {
+      display: none;
+    }
   }
 }

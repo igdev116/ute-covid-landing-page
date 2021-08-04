@@ -17,29 +17,93 @@
   user-select: none;
 
   &:hover {
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 99px;
+    @media (hover: hover) {
+      border-top-right-radius: 12px;
+      border-bottom-left-radius: 99px;
+    }
+  }
+
+  @include respond(mobile) {
+    padding: 10px;
+    font-size: 1.4rem;
+    min-width: 120px;
+    height: 40.5px;
   }
 
   &--red {
     background-color: $primary-red-color;
   }
 
-  &--red:hover {
-    background-color: $primary-yellow-color;
+  @media (hover: hover) {
+    &--red:hover {
+      background-color: $primary-yellow-color;
+    }
   }
 
   &--yellow {
     background-color: $primary-yellow-color;
   }
 
-  &--yellow:hover {
-    background-color: $primary-red-color;
+  @media (hover: hover) {
+    &--yellow:hover {
+      background-color: $primary-red-color;
+    }
   }
 
   &--small {
     height: 38.5px;
     min-width: 105px;
     font-size: 1.4rem;
+  }
+}
+
+.header__btn {
+  position: relative;
+
+  padding: 13px;
+  font-weight: 600;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  color: $primary-white-color;
+
+  transition: all 0.35s;
+
+  @include respond(phone) {
+    font-size: 1.45rem;
+  }
+
+  @include respond(mobile) {
+    padding: 10px;
+    color: $primary-red-color;
+  }
+
+  &:hover {
+    color: $primary-red-color;
+  }
+
+  &:before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+
+    width: 0;
+    height: 3px;
+    border-radius: 99px;
+
+    background-color: $primary-red-color;
+
+    transition: all 0.35s;
+
+    @include respond(mobile) {
+      width: 100%;
+    }
+  }
+
+  &:hover:before {
+    left: 0;
+    width: 100%;
   }
 }

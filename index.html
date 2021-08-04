@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
@@ -40,7 +41,7 @@
             ><i class="bx bxs-contact"></i><span>Contact us</span></a
           >
         </nav>
-        <button class="primary-btn primary-btn--red">
+        <button class="header__btn">
           <span>Emergency</span>
         </button>
       </div>
@@ -48,12 +49,11 @@
 
     <!-- banner -->
     <section class="banner container">
-      <div class="row">
-        <div class="col-5">
+      <div class="row gy-5">
+        <div class="col-12 col-lg-6 mb-md-70">
           <div class="banner__left">
             <h1 class="banner__title">
-              Let's help <br />
-              recover the earth, <br />
+              Let's help recover the earth,
               <strong>starts from us!</strong>
             </h1>
             <p class="banner__desc">
@@ -69,10 +69,10 @@
           </div>
         </div>
 
-        <div class="col-7">
+        <div class="col-12 col-lg-6">
           <div class="banner__right">
             <div class="banner__img">
-              <img src="/images/banner.png" alt="Banner" />
+              <img src="images/banner.png" alt="Banner" />
             </div>
           </div>
         </div>
@@ -84,14 +84,14 @@
     <!-- about -->
     <section class="about container">
       <div class="row">
-        <div class="col-5">
+        <div class="col-12 col-lg-6 mb-md-50">
           <div class="about__left">
-            <img src="/images/about.png" alt="About" />
+            <img src="images/about.png" alt="About" />
           </div>
         </div>
-        <div class="col-7">
+        <div class="col-12 col-lg-6">
           <div class="about__right">
-            <div class="block">
+            <div class="block block--mobile">
               <span class="block__caption line-left">Stay safe</span>
               <h2 class="block__heading">You should know about covid-19</h2>
               <p class="block__desc">
@@ -138,15 +138,15 @@
         </div>
       </div>
 
-      <img src="/images/case-background.png" class="case__background" />
+      <img src="images/case-background.png" class="case__background" />
     </section>
 
     <!-- sympton -->
     <section class="symptom container">
       <div class="row">
-        <div class="col-5">
+        <div class="col-12 col-lg-6 mb-md-70">
           <div class="symptom__left">
-            <div class="block">
+            <div class="block block--mobile">
               <span class="block__caption line-left">Symptoms</span>
               <h2 class="block__heading">Covid-19 Symptoms</h2>
               <p class="block__desc">
@@ -176,15 +176,15 @@
             </div>
           </div>
         </div>
-        <div class="col-7">
+        <div class="col-12 col-lg-6 mb-md-70">
           <div class="symptom__right">
             <img
               class="symptom__thumb"
-              src="/images/symptom.png"
+              src="images/symptom.png"
               alt="Symptom"
             />
             <img
-              src="/images/symptom-virus.png"
+              src="images/symptom-virus.png"
               alt="Virus"
               class="symptom__virus"
             />
@@ -201,7 +201,7 @@
       </div>
 
       <div class="row">
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-6 col-lg-4 p-4">
           <div class="card">
             <i class="card__icon bx bx-donate-blood"></i>
             <h3 class="card__title">Clean your hands for 20 secs</h3>
@@ -212,7 +212,7 @@
             <i class="card__virus bx bxs-virus"></i>
           </div>
         </div>
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-6 col-lg-4 p-4">
           <div class="card">
             <i class="card__icon bx bx-conversation"></i>
             <h3 class="card__title">Avoid Contacts</h3>
@@ -224,7 +224,7 @@
             <i class="card__virus bx bxs-virus"></i>
           </div>
         </div>
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-6 col-lg-4 p-4">
           <div class="card">
             <i class="card__icon bx bx-building-house"></i>
             <h3 class="card__title">Stay at Your Home</h3>
@@ -235,7 +235,7 @@
             <i class="card__virus bx bxs-virus"></i>
           </div>
         </div>
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-6 col-lg-4 p-4">
           <div class="card">
             <i class="card__icon bx bxs-face-mask"></i>
             <h3 class="card__title">Wear Face Mask</h3>
@@ -247,7 +247,7 @@
             <i class="card__virus bx bxs-virus"></i>
           </div>
         </div>
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-6 col-lg-4 p-4">
           <div class="card">
             <i class="card__icon bx bx-plus-medical"></i>
             <h3 class="card__title">Get Vaccinated</h3>
@@ -258,7 +258,7 @@
             <i class="card__virus bx bxs-virus"></i>
           </div>
         </div>
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-6 col-lg-4 p-4">
           <div class="card">
             <i class="card__icon bx bx-meteor"></i>
             <h3 class="card__title">Cover coughs and sneezes</h3>
@@ -280,7 +280,7 @@
       </div>
 
       <div class="row">
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-4 p-4">
           <div class="doctor">
             <img class="doctor__img" src="/svgs/doctor-1.svg" alt="Doctor" />
             <div class="doctor__desc">
@@ -300,7 +300,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-4 p-4">
           <div class="doctor">
             <img class="doctor__img" src="/svgs/doctor-2.svg" alt="Doctor" />
             <div class="doctor__desc">
@@ -320,7 +320,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-4 p-4">
           <div class="doctor">
             <img class="doctor__img" src="/svgs/doctor-3.svg" alt="Doctor" />
             <div class="doctor__desc">
@@ -343,16 +343,16 @@
       </div>
     </section>
 
-    <!-- step -->
-    <section class="steps container">
+    <!-- thing -->
+    <section class="things container">
       <div class="block block--center">
         <span class="block__caption line-left line-right">Remind</span>
         <h2 class="block__heading">Two important things</h2>
       </div>
 
-      <div class="row step">
-        <div class="col-6">
-          <div class="step__left">
+      <div class="row thing">
+        <div class="col-12 col-md-6 mb-sm-50">
+          <div class="thing__left">
             <div class="block">
               <div class="badge badge--red">First thing</div>
               <h2 class="block__heading block__heading--small">
@@ -367,22 +367,22 @@
           </div>
         </div>
 
-        <div class="col-6">
-          <div class="step__right">
-            <img src="/images/step-1.png" alt="Step" />
+        <div class="col-12 col-md-6 mb-sm-50">
+          <div class="thing__right">
+            <img src="images/thing-1.png" alt="thing" />
           </div>
         </div>
       </div>
 
-      <div class="row step">
-        <div class="col-6">
-          <div class="step__left">
-            <img src="/images/step-2.png" alt="Step" />
+      <div class="row thing">
+        <div class="col-12 col-md-6 mb-sm-50">
+          <div class="thing__left">
+            <img src="images/thing-2.png" alt="thing" />
           </div>
         </div>
 
-        <div class="col-6">
-          <div class="step__right">
+        <div class="col-12 col-md-6 mb-sm-50">
+          <div class="thing__right">
             <div class="block">
               <div class="badge badge--yellow">Second thing</div>
               <h2 class="block__heading block__heading--small">
@@ -402,15 +402,15 @@
 
     <!-- news -->
     <section class="news container">
-      <div class="block block--center">
+      <div class="block block--mobile block--center">
         <span class="block__caption line-left line-right">News</span>
         <h2 class="block__heading">Recent news of covid-19</h2>
       </div>
 
       <div class="row">
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-4 p-4">
           <div class="new">
-            <img src="/images/news-1.jpg" alt="News" />
+            <img src="images/news-1.jpg" alt="News" />
             <a href="#" class="new__content">
               <span class="new__label">Quarantine</span>
               <h3 class="new__title">
@@ -422,9 +422,9 @@
             </a>
           </div>
         </div>
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-4 p-4">
           <div class="new">
-            <img src="/images/news-2.jpg" alt="News" />
+            <img src="images/news-2.jpg" alt="News" />
             <a href="#" class="new__content">
               <span class="new__label">Treatment</span>
               <h3 class="new__title">
@@ -436,9 +436,9 @@
             </a>
           </div>
         </div>
-        <div class="col-4 p-4">
+        <div class="col-12 col-md-4 p-4">
           <div class="new">
-            <img src="/images/news-3.jpg" alt="News" />
+            <img src="images/news-3.jpg" alt="News" />
             <a href="#" class="new__content">
               <span class="new__label">Covid-19</span>
               <h3 class="new__title">
@@ -454,7 +454,7 @@
     </section>
 
     <!-- ending -->
-    <section class="ending">
+    <section class="ending container">
       <div class="block block--center">
         <span class="block__caption line-left line-right">End</span>
         <h2 class="block__heading">Say thank you to our real heros</h2>
@@ -465,42 +465,58 @@
           stories
         </p>
       </div>
-      <div class="ending__img">
-        <img src="/svgs/end.svg" alt="End" />
+      <div class="row">
+        <div class="ending__img col-sm-12 col-md-7 col-lg-6">
+          <img src="/svgs/end.svg" alt="End" />
+        </div>
       </div>
     </section>
 
     <!-- footer -->
     <footer class="footer">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="footer__logo">
+      <div
+        class="
+          container
+          d-flex
+          flex-md-row flex-column
+          justify-content-between
+          align-items-center
+        "
+      >
+        <div class="footer__logo mb-sm-70">
           <img src="/svgs/logo.svg" alt="Logo" />
         </div>
-        <ul class="footer__items">
-          <li class="footer__item">
+        <ul class="footer__items mb-sm-70">
+          <li class="footer__item text-hover">
             <a href="#" class="footer__link">Overview</a>
           </li>
-          <li class="footer__item">
+          <li class="footer__item text-hover">
             <a href="#" class="footer__link">Symptoms</a>
           </li>
-          <li class="footer__item">
+          <li class="footer__item text-hover">
             <a href="#" class="footer__link">Prevention</a>
           </li>
-          <li class="footer__item">
+          <li class="footer__item text-hover">
             <a href="#" class="footer__link">Treatment</a>
           </li>
         </ul>
         <ul class="footer__contacts">
-          <a href="https://www.facebook.com/hung1162/" class="footer__contact"
+          <a
+            href="https://www.facebook.com/hung1162/"
+            class="footer__contact text-hover"
             ><i class="bx bxl-facebook"></i
           ></a>
           <a
             href="https://www.youtube.com/watch?v=QWrq6c8s07w&t=22s"
-            class="footer__contact"
+            class="footer__contact text-hover"
             ><i class="bx bxl-youtube"></i
           ></a>
-          <a href="#" class="footer__contact"><i class="bx bxl-twitter"></i></a>
-          <a href="https://github.com/minhhunghuynh1106" class="footer__contact"
+          <a href="#" class="footer__contact text-hover"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a
+            href="https://github.com/minhhunghuynh1106"
+            class="footer__contact text-hover"
             ><i class="bx bxl-github bx-tada"></i
           ></a>
         </ul>

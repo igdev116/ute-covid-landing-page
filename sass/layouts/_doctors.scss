@@ -1,6 +1,15 @@
 .doctors {
   margin-bottom: 150px;
-  padding: 0 120px;
+  padding: 0 80px;
+
+  @include respond(tablet) {
+    padding: 0 20px;
+    margin-bottom: 110px;
+  }
+
+  @include respond(phone) {
+    padding: 0 50px;
+  }
 
   .block {
     margin-bottom: 50px;

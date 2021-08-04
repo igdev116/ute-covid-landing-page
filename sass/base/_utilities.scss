@@ -1,7 +1,39 @@
 .text-hover {
-  transition: all 0.35s;
+  cursor: pointer;
 
-  &:hover {
+  * {
+    transition: all 0.35s ease;
+  }
+
+  &:hover * {
     color: $primary-red-color;
+  }
+}
+
+@include respond(phone) {
+  .mb-sm-50 {
+    margin-bottom: 50px;
+  }
+
+  .mb-sm-70 {
+    margin-bottom: 70px;
+  }
+
+  .mb-sm-100 {
+    margin-bottom: 100px;
+  }
+}
+
+@include respond(mobile) {
+  .mb-md-50 {
+    margin-bottom: 50px;
+  }
+
+  .mb-md-70 {
+    margin-bottom: 70px;
+  }
+
+  .mb-md-100 {
+    margin-bottom: 100px;
   }
 }

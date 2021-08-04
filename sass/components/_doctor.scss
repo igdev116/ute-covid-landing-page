@@ -8,7 +8,7 @@
   text-align: center;
   gap: 20px;
   padding: 40px 40px 110px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px 20px 20px 12px;
   overflow: hidden;
   height: 100%;
@@ -16,6 +16,14 @@
   background-color: $doctor-background-color;
 
   cursor: pointer;
+
+  @include respond(tablet) {
+    padding-top: 20px;
+  }
+
+  @include respond(phone) {
+    padding-top: 30px;
+  }
 
   &__img {
     width: 150px;
@@ -33,6 +41,12 @@
     background-color: $primary-white-color;
 
     transition: all 0.3s;
+
+    @include respond(mobile) {
+      padding-top: 15px;
+
+      background-color: $primary-red-color;
+    }
   }
 
   @media (hover: hover) {
@@ -49,6 +63,12 @@
     margin-bottom: 5px;
 
     transition: all 0.28s ease-out;
+
+    @include respond(mobile) {
+      font-size: 1.6rem;
+
+      color: $primary-white-color;
+    }
   }
 
   &__role {
@@ -57,6 +77,12 @@
     color: $primary-grey-color;
 
     transition: all 0.28s ease-out;
+
+    @include respond(mobile) {
+      color: $primary-white-color;
+
+      font-size: 1.3rem;
+    }
   }
 
   @media (hover: hover) {
@@ -72,6 +98,10 @@
 
     width: 100%;
     text-align: center;
+
+    @include respond(mobile) {
+      bottom: 7px;
+    }
   }
 
   &__contact {
@@ -83,6 +113,11 @@
     color: $primary-white-color;
 
     transition: all 0.25s ease-out;
+
+    @include respond(mobile) {
+      font-size: 1.8rem;
+      opacity: 1;
+    }
   }
 
   @media (hover: hover) {

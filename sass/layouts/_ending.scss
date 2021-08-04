@@ -1,10 +1,14 @@
 .ending {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 
   .block {
     width: 600px;
     margin: 0 auto;
     text-align: center;
+
+    @include respond(mobile) {
+      width: 100%;
+    }
   }
 
   &__img {

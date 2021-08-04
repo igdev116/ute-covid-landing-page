@@ -1,13 +1,27 @@
 .case {
   position: relative;
 
-  padding: 0 100px;
+  padding: 0 50px;
   margin-bottom: 170px;
+
+  @include respond(mobile) {
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+
+    @include respond(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 5px;
+    }
   }
 
   &__item {
@@ -22,6 +36,12 @@
     border-radius: 30px 30px 30px 12px;
 
     color: $primary-white-color;
+
+    @include respond(phone) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-top: 15px;
+    }
   }
 
   &__item:nth-child(1) {
@@ -43,12 +63,20 @@
   &__qnt {
     font-size: 2.8rem;
     font-weight: bold;
+
+    @include respond(mobile) {
+      font-size: 2.6rem;
+    }
   }
 
   &__desc {
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
+
+    @include respond(mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__item img {

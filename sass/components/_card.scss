@@ -13,8 +13,10 @@
 
   cursor: pointer;
 
-  &:hover {
-    background-color: $primary-red-color;
+  @media (hover: hover) {
+    &:hover {
+      background-color: $primary-red-color;
+    }
   }
 
   &__icon {
@@ -46,8 +48,10 @@
     transition: all 0.25s ease;
   }
 
-  &:hover * {
-    color: $primary-white-color;
+  @media (hover: hover) {
+    &:hover * {
+      color: $primary-white-color;
+    }
   }
 
   &__virus {
@@ -62,12 +66,14 @@
     transition: all 0.3s;
   }
 
-  &:hover &__virus {
-    transform: scale(1.1) translateY(-50px) rotate(90deg);
-    opacity: 1;
+  @media (hover: hover) {
+    &:hover &__virus {
+      transform: scale(1.1) translateY(-50px) rotate(90deg);
+      opacity: 1;
 
-    color: #c02323ad;
+      color: #c02323ad;
 
-    transition-duration: 0.55s;
+      transition-duration: 0.55s;
+    }
   }
 }

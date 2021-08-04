@@ -4,27 +4,38 @@
 
   &__logo {
     width: 130px;
+
+    @include respond(mobile) {
+      width: 100px;
+    }
   }
 
   &__items {
     display: flex;
     align-items: center;
-    gap: 20px;
+    column-gap: 20px;
+
+    @include respond(phone) {
+      text-align: center;
+      row-gap: 40px;
+      column-gap: 0;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     font-size: 1.4rem;
     padding: 0 5px;
+
+    @include respond(mobile) {
+      flex: 0 0 50%;
+      width: 50%;
+      font-size: 1.3rem;
+    }
   }
 
   &__item > a {
     color: $primary-white-color;
-
-    transition: all 0.25s ease;
-  }
-
-  &__item:hover > a {
-    color: $primary-red-color;
   }
 
   &__contacts {
@@ -40,10 +51,10 @@
     color: $primary-white-color;
 
     transition: all 0.25s ease;
-  }
 
-  &__contact:hover {
-    color: $primary-red-color;
+    @include respond(mobile) {
+      font-size: 1.8rem;
+    }
   }
 
   &__copyright {
@@ -55,6 +66,11 @@
     font-size: 1.2rem;
     padding-top: 30px;
     color: $primary-white-color;
+
+    @include respond(mobile) {
+      padding-top: 20px;
+      font-size: 1.1rem;
+    }
   }
 
   &__copyright:before {

@@ -17,7 +17,7 @@
     transition: all 0.35s ease-in-out;
   }
 
-  @media (hover) {
+  @media (hover: hover) {
     &:hover img {
       opacity: 0.8;
       transform: rotate(3deg) scale(1.05);
@@ -32,6 +32,10 @@
     text-align: center;
     gap: 10px;
     padding: 25px 20px;
+
+    @include respond(mobile) {
+      padding: 10px 0;
+    }
   }
 
   &__label {
@@ -44,5 +48,12 @@
     font-size: 1.4rem;
     margin-bottom: 10px;
     line-height: 1.7;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
   }
 }

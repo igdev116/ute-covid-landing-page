@@ -9,6 +9,10 @@
   min-width: max-content;
   text-align: center;
 
+  @include respond(mobile) {
+    padding: 8px 16px;
+  }
+
   &--red {
     color: $primary-red-color;
   }

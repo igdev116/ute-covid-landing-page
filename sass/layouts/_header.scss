@@ -3,6 +3,10 @@
 
   background-color: $header-background-color;
 
+  @include respond(phone) {
+    padding: 10px 0;
+  }
+
   & > .container {
     display: flex;
     justify-content: space-between;
@@ -11,12 +15,20 @@
 
   &__logo {
     width: 120px;
+
+    @include respond(phone) {
+      width: 100px;
+    }
   }
 
   &__nav {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @include respond(mobile) {
+      display: none;
+    }
   }
 
   &__nav-item {
