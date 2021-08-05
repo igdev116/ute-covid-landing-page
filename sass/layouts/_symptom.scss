@@ -1,5 +1,5 @@
 .symptom {
-  margin-bottom: 100px;
+  margin-bottom: 160px;
 
   @include respond(mobile) {
     margin-bottom: 40px;
@@ -86,23 +86,31 @@
     }
   }
 
-  &__virus {
+  &__virus-wrapper {
     position: absolute;
 
     top: 10px;
     left: 17.5%;
+
+    @include respond(tablet) {
+      left: 23.5%;
+    }
+
+    @include respond(phone) {
+      left: 5%;
+    }
+  }
+
+  &__virus {
     width: 500px;
 
     animation: infinite-poppin 2s ease-in-out infinite alternate;
 
     @include respond(tablet) {
       width: 400px;
-      left: 23.5%;
     }
 
     @include respond(phone) {
-      left: 5%;
-
       max-width: 300px;
     }
   }

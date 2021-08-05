@@ -216,12 +216,11 @@ html {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
   border-radius: 99px 99px 99px 12px;
   font-weight: 600;
   font-size: 1.6rem;
-  min-width: 140px;
-  height: 45.5px;
+  min-width: 135px;
+  height: 44.5px;
   color: #fff;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
@@ -317,7 +316,6 @@ html {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   height: 100%;
   overflow: hidden;
-  transition: all 0.12s ease-in-out;
   cursor: pointer;
 }
 @media (hover: hover) {
@@ -553,7 +551,7 @@ html {
 .thing img {
   width: 70%;
 }
-.thing .primary-btn {
+.thing__btn {
   text-align: center;
   align-self: flex-start;
 }
@@ -640,7 +638,7 @@ html {
 .banner {
   position: relative;
   margin-top: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 }
 @media (max-width: 991px) {
   .banner {
@@ -708,17 +706,25 @@ html {
 .banner__img img {
   object-fit: contain;
 }
-.banner__virus {
+.banner__virus-wrapper {
   position: absolute;
   z-index: -1;
+}
+.banner__virus-wrapper:nth-of-type(2) {
+  left: 40%;
+  top: 10px;
+}
+.banner__virus-wrapper:nth-of-type(3) {
+  bottom: -30px;
+  right: -60px;
+}
+.banner__virus {
   background-repeat: no-repeat;
   animation: infinite-rotate 30s linear infinite;
 }
 .banner__virus--red {
-  left: 40%;
-  top: 10px;
   width: 135px;
-  height: 130px;
+  height: 135px;
   background-image: url(../images/virus-red.png);
 }
 @media (max-width: 991px) {
@@ -727,8 +733,6 @@ html {
   }
 }
 .banner__virus--blue {
-  bottom: -30px;
-  right: -60px;
   width: 175px;
   height: 170px;
   background-image: url(../images/virus-blue.png);
@@ -768,11 +772,11 @@ html {
     padding-left: 0;
   }
 }
-.about__right .primary-btn {
+.about__right .about__btn {
   align-self: flex-start;
 }
 @media (max-width: 991px) {
-  .about__right .primary-btn {
+  .about__right .about__btn {
     align-self: center;
   }
 }
@@ -886,7 +890,7 @@ html {
 }
 
 .symptom {
-  margin-bottom: 100px;
+  margin-bottom: 160px;
 }
 @media (max-width: 991px) {
   .symptom {
@@ -967,28 +971,38 @@ html {
     width: 300px;
   }
 }
-.symptom__virus {
+.symptom__virus-wrapper {
   position: absolute;
   top: 10px;
   left: 17.5%;
+}
+@media (max-width: 991px) {
+  .symptom__virus-wrapper {
+    left: 23.5%;
+  }
+}
+@media (max-width: 767px) {
+  .symptom__virus-wrapper {
+    left: 5%;
+  }
+}
+.symptom__virus {
   width: 500px;
   animation: infinite-poppin 2s ease-in-out infinite alternate;
 }
 @media (max-width: 991px) {
   .symptom__virus {
     width: 400px;
-    left: 23.5%;
   }
 }
 @media (max-width: 767px) {
   .symptom__virus {
-    left: 5%;
     max-width: 300px;
   }
 }
 
 .cards {
-  margin-bottom: 80px;
+  margin-bottom: 140px;
   padding: 0 80px;
 }
 @media (max-width: 991px) {

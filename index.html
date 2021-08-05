@@ -77,8 +77,12 @@
           </div>
         </div>
       </div>
-      <div class="banner__virus banner__virus--red"></div>
-      <div class="banner__virus banner__virus--blue"></div>
+      <div class="banner__virus-wrapper">
+        <div class="banner__virus banner__virus--red"></div>
+      </div>
+      <div class="banner__virus-wrapper">
+        <div class="banner__virus banner__virus--blue"></div>
+      </div>
     </section>
 
     <!-- about -->
@@ -101,7 +105,9 @@
                 illness and recover without requiring special treatment
               </p>
             </div>
-            <div class="primary-btn primary-btn--red">Read more</div>
+            <div class="about__btn">
+              <button class="primary-btn primary-btn--red">Read more</button>
+            </div>
           </div>
         </div>
       </div>
@@ -122,17 +128,17 @@
           <img src="svgs/case-icon.svg" alt="Virus" />
         </div>
         <div class="case__item">
-          <span class="case__qnt">1,051,429</span>
+          <span class="case__qnt">1051429</span>
           <p class="case__desc">Confirmed cases</p>
           <img src="svgs/case-icon.svg" alt="Virus" />
         </div>
         <div class="case__item">
-          <span class="case__qnt">412,311</span>
+          <span class="case__qnt">412311</span>
           <p class="case__desc">Deaths</p>
           <img src="svgs/case-icon.svg" alt="Virus" />
         </div>
         <div class="case__item">
-          <span class="case__qnt">520,133</span>
+          <span class="case__qnt">520133</span>
           <p class="case__desc">Recovered</p>
           <img src="svgs/case-icon.svg" alt="Virus" />
         </div>
@@ -183,11 +189,13 @@
               src="images/symptom.png"
               alt="Symptom"
             />
-            <img
-              src="images/symptom-virus.png"
-              alt="Virus"
-              class="symptom__virus"
-            />
+            <div class="symptom__virus-wrapper">
+              <img
+                src="images/symptom-virus.png"
+                alt="Virus"
+                class="symptom__virus"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -343,14 +351,14 @@
       </div>
     </section>
 
-    <!-- thing -->
+    <!-- things -->
     <section class="things container">
       <div class="block block--center">
         <span class="block__caption line-left line-right">Remind</span>
         <h2 class="block__heading">Two important things</h2>
       </div>
 
-      <div class="row thing">
+      <div class="row thing thing--first">
         <div class="col-12 col-md-6 mb-sm-50">
           <div class="thing__left">
             <div class="block">
@@ -363,7 +371,9 @@
                 about the outbreak. Another way to care for yourself
               </p>
             </div>
-            <div class="primary-btn primary-btn--red">Detail</div>
+            <div class="thing__btn">
+              <div class="primary-btn primary-btn--red">Detail</div>
+            </div>
           </div>
         </div>
 
@@ -374,7 +384,7 @@
         </div>
       </div>
 
-      <div class="row thing">
+      <div class="row thing thing--second">
         <div class="col-12 col-md-6 mb-sm-50">
           <div class="thing__left">
             <img src="images/thing-2.png" alt="thing" />
@@ -394,7 +404,9 @@
                 other household members
               </p>
             </div>
-            <div class="primary-btn primary-btn--red">See more</div>
+            <div class="thing__btn">
+              <div class="primary-btn primary-btn--red">See more</div>
+            </div>
           </div>
         </div>
       </div>
@@ -525,6 +537,9 @@
     </footer>
   </body>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- <script src="./js/gsap.min.js"></script> -->
   <script src="./js/index.js"></script>
 </html>

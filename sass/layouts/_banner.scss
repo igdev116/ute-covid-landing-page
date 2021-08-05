@@ -2,7 +2,7 @@
   position: relative;
 
   margin-top: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
 
   @include respond(tablet) {
     margin-bottom: 150px;
@@ -71,22 +71,30 @@
     object-fit: contain;
   }
 
-  &__virus {
+  &__virus-wrapper {
     position: absolute;
-
     z-index: -1;
+  }
 
+  &__virus-wrapper:nth-of-type(2) {
+    left: 40%;
+    top: 10px;
+  }
+
+  &__virus-wrapper:nth-of-type(3) {
+    bottom: -30px;
+    right: -60px;
+  }
+
+  &__virus {
     background-repeat: no-repeat;
 
     animation: infinite-rotate 30s linear infinite;
   }
 
   &__virus--red {
-    left: 40%;
-    top: 10px;
-
     width: 135px;
-    height: 130px;
+    height: 135px;
 
     background-image: url(../images/virus-red.png);
 
@@ -96,9 +104,6 @@
   }
 
   &__virus--blue {
-    bottom: -30px;
-    right: -60px;
-
     width: 175px;
     height: 170px;
 
