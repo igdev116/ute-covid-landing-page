@@ -12,7 +12,12 @@ $(document).ready(function () {
 });
 
 const bannerAnimate = () => {
-  const tl = gsap.timeline();
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".banner",
+      start: "top center",
+    },
+  });
 
   tl.from(".banner__title", { x: -80, opacity: 0, duration: 1.1 })
     .from(".banner__desc", { y: 50, opacity: 0, duration: 1 }, "-=0.5")
