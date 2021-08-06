@@ -9,6 +9,8 @@ $(document).ready(function () {
   secondThingAnimate();
   newsAnimate();
   endingAnimate();
+  handleScrollTo();
+  handleStickyHeader();
 });
 
 const bannerAnimate = () => {
@@ -86,7 +88,6 @@ const caseAnimate = () => {
     name: "counter",
     extendTimeline: true,
     defaults: {
-      end: 0,
       duration: 2.5,
       ease: "power1",
       increment: 1,
@@ -121,14 +122,21 @@ const caseAnimate = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".case",
-      start: "-30% center",
+      start: "top bottom",
     },
   });
 
   tl.from(".case .block__caption", { x: -10, opacity: 0, duration: 1 })
     .from(".case .block__heading", { x: 10, opacity: 0, duration: 1 }, "-=0.5")
-    .from(".case__qnt", { opacity: 0 }, "-=1.5")
-    .counter(".case__qnt", { start: 0, end: 1001255, ease: "linear" }, "-=1.5");
+    .from(".case__qnt", { opacity: 0 }, "-=2")
+    .counter(".case__item:nth-child(1) .case__qnt", { end: 1001255 }, "-=2.5")
+    .counter(".case__item:nth-child(2) .case__qnt", { end: 15759429 }, "-=2.5")
+    .counter(".case__item:nth-child(3) .case__qnt", { end: 4273880 }, "-=2.5")
+    .counter(
+      ".case__item:nth-child(4) .case__qnt",
+      { end: 181142436 },
+      "-=2.5"
+    );
 };
 
 const symptomAnimate = () => {
@@ -190,7 +198,7 @@ const symptomAnimate = () => {
       },
       "-=0.4"
     )
-    .from(".symptom__thumb", { x: 50, opacity: 0, duration: 1 }, "-=2")
+    .from(".symptom__thumb", { x: 50, opacity: 0, duration: 1 }, "-=2.5")
     .from(
       ".symptom__virus-wrapper",
       {
@@ -217,7 +225,7 @@ const cardsAnimate = () => {
       { x: 20, opacity: 0, duration: 0.8 },
       "-=0.2"
     )
-    .from(".card", { y: 20, opacity: 0, duration: 0.8 }, "-=1.2");
+    .from(".cards .col-12", { y: 20, opacity: 0, duration: 0.8 }, "-=1.2");
 };
 
 const doctorsAnimate = () => {
@@ -286,7 +294,7 @@ const secondThingAnimate = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".thing--second",
-      start: "-20% center",
+      start: "-10% center",
     },
   });
 
@@ -363,11 +371,54 @@ const endingAnimate = () => {
     .from(".ending .block__desc", {
       y: 20,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.5,
     })
     .from(".ending__img", {
       y: 40,
       opacity: 0,
-      duration: 0.7,
+      duration: 0.8,
     });
+};
+
+const handleScrollTo = () => {
+  $(".header__nav-home").click(() => {
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+  });
+  $(".header__nav-about").click(() => {
+    $("html, body").animate(
+      { scrollTop: $(".about").offset().top - 150 },
+      1000
+    );
+  });
+  $(".header__nav-prevent").click(() => {
+    $("html, body").animate(
+      { scrollTop: $(".things").offset().top - 150 },
+      1000
+    );
+  });
+  $(".header__nav-contact").click(() => {
+    $("html, body").animate(
+      { scrollTop: $(".doctors").offset().top - 150 },
+      1000
+    );
+  });
+};
+
+const handleStickyHeader = () => {
+  const header = $(".header");
+  let isHide = true;
+
+  $(window).scroll(() => {
+    const scrollTop = $(window).scrollTop();
+    if (scrollTop === 0) isHide = true;
+
+    if (scrollTop > 400) {
+      header.removeClass("hide");
+      header.addClass("show");
+    } else if (scrollTop > header.innerHeight() && isHide) {
+      header.removeClass("show");
+      header.addClass("hide");
+      isHide = false;
+    }
+  });
 };
