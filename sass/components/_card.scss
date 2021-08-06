@@ -11,6 +11,8 @@
 
   cursor: pointer;
 
+  transition: all 0.25s;
+
   @media (hover: hover) {
     &:hover {
       background-color: $primary-red-color;

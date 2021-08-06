@@ -1,11 +1,9 @@
 .things {
   display: flex;
   flex-direction: column;
-  gap: 80px;
   margin-bottom: 160px;
 
   @include respond(tablet) {
-    gap: 20px;
     margin-bottom: 140px;
   }
 

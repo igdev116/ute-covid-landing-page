@@ -30,8 +30,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 10px;
     padding: 25px 20px;
+
+    & > *:not(:first-child) {
+      margin-top: 10px;
+    }
 
     @include respond(mobile) {
       padding: 10px 0;

@@ -13,13 +13,24 @@
   &__items {
     display: flex;
     align-items: center;
-    column-gap: 20px;
 
     @include respond(phone) {
       text-align: center;
-      row-gap: 40px;
-      column-gap: 0;
       flex-wrap: wrap;
+    }
+  }
+
+  &__items > *:not(:first-child) {
+    margin-left: 20px;
+
+    @include respond(phone) {
+      margin-left: 0;
+    }
+  }
+
+  &__items :is(:nth-child(3), :nth-child(4)) {
+    @include respond(phone) {
+      margin-top: 40px;
     }
   }
 
@@ -41,7 +52,10 @@
   &__contacts {
     display: flex;
     align-items: center;
-    gap: 10px;
+
+    & > *:not(:first-child) {
+      margin-left: 10px;
+    }
   }
 
   &__contact {

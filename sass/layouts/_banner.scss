@@ -1,7 +1,7 @@
 .banner {
   position: relative;
 
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 130px;
 
   @include respond(tablet) {
@@ -17,7 +17,10 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    gap: 30px;
+  }
+
+  &__left > *:not(:first-child) {
+    margin-top: 30px;
   }
 
   &__title {
@@ -45,11 +48,14 @@
   &__btns {
     display: flex;
     align-items: center;
-    gap: 20px;
 
     @include respond(mobile) {
       justify-content: center;
     }
+  }
+
+  &__btns .primary-btn:first-child {
+    margin-right: 20px;
   }
 
   &__img {

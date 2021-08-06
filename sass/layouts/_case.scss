@@ -30,7 +30,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
     padding: 40px 0;
     margin-top: 30px;
     border-radius: 30px 30px 30px 12px;
@@ -73,6 +72,7 @@
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
+    margin-top: 10px;
 
     @include respond(mobile) {
       font-size: 1.6rem;

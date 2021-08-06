@@ -16,13 +16,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
     height: 100%;
     padding-left: 50px;
 
     @include respond(mobile) {
       padding-left: 0;
     }
+  }
+
+  &__right > *:not(:first-child) {
+    margin-top: 30px;
   }
 
   &__right &__btn {

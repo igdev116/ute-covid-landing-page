@@ -1,7 +1,23 @@
 .header {
-  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100%;
+  padding: 8px 0;
 
   background-color: $header-background-color;
+
+  transition: all 0.25s;
+
+  &.show {
+    transform: translateY(0);
+  }
+
+  &.hide {
+    transform: translateY(-100%);
+  }
 
   @include respond(phone) {
     padding: 10px 0;
@@ -24,7 +40,10 @@
   &__nav {
     display: flex;
     align-items: center;
-    gap: 20px;
+
+    & > *:not(:first-child) {
+      margin-left: 20px;
+    }
 
     @include respond(mobile) {
       display: none;
@@ -36,7 +55,6 @@
     font-size: 1.4rem;
     display: flex;
     align-items: center;
-    gap: 8px;
     text-transform: capitalize;
 
     color: $primary-white-color;
@@ -44,5 +62,17 @@
 
   &__nav-item .bx {
     font-size: 1.6rem;
+    margin-right: 8px;
+  }
+}
+
+@keyframes scroll {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
