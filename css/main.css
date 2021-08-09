@@ -1238,5 +1238,8 @@ html {
 .things .thing:last-child {
   margin-top: 70px;
 }
+.things .block {
+  margin-bottom: 70px;
+}
 
 /*# sourceMappingURL=main.css.map */
