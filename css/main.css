@@ -1238,7 +1238,7 @@ html {
 .things .thing:last-child {
   margin-top: 70px;
 }
-.things .block {
+.things > .block--center {
   margin-bottom: 70px;
 }
 
