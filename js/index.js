@@ -57,20 +57,20 @@ const aboutAnimate = () => {
     .from(
       ".about__right .block__heading",
       {
-        x: 50,
+        x: 20,
         opacity: 0,
         duration: 1.3,
       },
-      "-=0.3"
+      "-=0.6"
     )
     .from(
       ".about__right .block__desc",
       {
-        y: 30,
+        y: 20,
         opacity: 0,
-        duration: 1,
+        duration: 0.8,
       },
-      "-=0.5"
+      "-=0.6"
     )
     .from(
       ".about__btn",
@@ -79,7 +79,7 @@ const aboutAnimate = () => {
         opacity: 0,
         duration: 0.8,
       },
-      "-=0.2"
+      "-=0.4"
     );
 };
 
@@ -129,14 +129,10 @@ const caseAnimate = () => {
   tl.from(".case .block__caption", { x: -10, opacity: 0, duration: 1 })
     .from(".case .block__heading", { x: 10, opacity: 0, duration: 1 }, "-=0.5")
     .from(".case__qnt", { opacity: 0 }, "-=2")
-    .counter(".case__item:nth-child(1) .case__qnt", { end: 1001255 }, "-=2.5")
-    .counter(".case__item:nth-child(2) .case__qnt", { end: 15759429 }, "-=2.5")
-    .counter(".case__item:nth-child(3) .case__qnt", { end: 4273880 }, "-=2.5")
-    .counter(
-      ".case__item:nth-child(4) .case__qnt",
-      { end: 181142436 },
-      "-=2.5"
-    );
+    .counter(".case__item:nth-child(1) .case__qnt", { end: 1001255 }, 0)
+    .counter(".case__item:nth-child(2) .case__qnt", { end: 15759429 }, 0)
+    .counter(".case__item:nth-child(3) .case__qnt", { end: 4273880 }, 0)
+    .counter(".case__item:nth-child(4) .case__qnt", { end: 181142436 }, 0);
 };
 
 const symptomAnimate = () => {
@@ -219,7 +215,7 @@ const cardsAnimate = () => {
     },
   });
 
-  tl.from(".cards .block__caption", { x: -20, opacity: 0, duration: 1 })
+  tl.from(".cards .block__caption", { x: -20, opacity: 0, duration: 0.8 })
     .from(
       ".cards .block__heading",
       { x: 20, opacity: 0, duration: 0.8 },
@@ -236,11 +232,11 @@ const doctorsAnimate = () => {
     },
   });
 
-  tl.from(".doctors .block__caption", { x: -20, opacity: 0, duration: 1 })
+  tl.from(".doctors .block__caption", { x: -20, opacity: 0, duration: 0.8 })
     .from(
       ".doctors .block__heading",
       { x: 20, opacity: 0, duration: 0.8 },
-      "-=0.2"
+      "-=0.3"
     )
     .from(".doctor", { y: 20, opacity: 0, duration: 0.8 }, "-=1.2");
 };
@@ -256,12 +252,12 @@ const firstThingAnimate = () => {
   tl.from(".things > .block > .block__caption", {
     x: 20,
     opacity: 0,
-    duration: 1,
+    duration: 0.6,
   })
     .from(
       ".things > .block > .block__heading",
       { x: -20, opacity: 0, duration: 0.7 },
-      "-=0.2"
+      "-=0.4"
     )
     .from(
       ".thing--first .thing__left .badge",
@@ -343,11 +339,15 @@ const newsAnimate = () => {
       opacity: 0,
       duration: 0.6,
     })
-    .from(".news .col-12", {
-      y: 20,
-      opacity: 0,
-      duration: 0.8,
-    });
+    .from(
+      ".news .col-12",
+      {
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+      },
+      "-=0.1"
+    );
 };
 
 const endingAnimate = () => {
@@ -361,13 +361,17 @@ const endingAnimate = () => {
   tl.from(".ending .block__caption", {
     x: 20,
     opacity: 0,
-    duration: 0.8,
+    duration: 0.6,
   })
-    .from(".ending .block__heading", {
-      x: -20,
-      opacity: 0,
-      duration: 0.8,
-    })
+    .from(
+      ".ending .block__heading",
+      {
+        x: -20,
+        opacity: 0,
+        duration: 0.5,
+      },
+      "-=0.2"
+    )
     .from(".ending .block__desc", {
       y: 20,
       opacity: 0,

@@ -104,4 +104,12 @@
       rgba(255, 255, 255, 0) 75%
     );
   }
+
+  &__copyright-row:first-child {
+    margin-bottom: 20px;
+  }
+
+  &__copyright-row > * {
+    line-height: 2.2;
+  }
 }

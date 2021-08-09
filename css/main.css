@@ -612,7 +612,7 @@ html {
   width: 100%;
   padding: 8px 0;
   background-color: rgba(0, 0, 0, 0.84);
-  transition: all 0.25s;
+  transition: all 0.38s;
 }
 .header.show {
   transform: translateY(0);
@@ -1212,6 +1212,12 @@ html {
   margin-left: -40%;
   height: 1px;
   background: radial-gradient(ellipse at center, rgba(222, 228, 239, 0.2) 0, rgba(255, 255, 255, 0) 75%);
+}
+.footer__copyright-row:first-child {
+  margin-bottom: 20px;
+}
+.footer__copyright-row > * {
+  line-height: 2.2;
 }
 
 .things {
